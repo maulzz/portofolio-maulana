@@ -72,11 +72,11 @@ export default function Contact() {
             <div className="space-y-6 font-mono font-bold text-lg md:text-xl">
               <div className="flex items-center gap-4 bg-white border-4 border-black p-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] w-fit hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none transition-all cursor-pointer">
                 <FaEnvelope className="text-2xl text-neo-blue" />
-                <span>wildanmaulana95914@gmail.com</span>
+                <span className="text-base lg:text-lg">wildanmaulana95914@gmail.com</span>
               </div>
               <div className="flex items-center gap-4 bg-white border-4 border-black p-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] w-fit hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none transition-all cursor-pointer">
-                <FaLocationDot className="text-2xl text-neo-pink" />
-                <span>Magelang, Jawa Tengah, Indonesia</span>
+                <FaLocationDot className="text-2xl text-neo-lime" />
+                <span className="text-base lg:text-lg">Magelang, Jawa Tengah, Indonesia</span>
               </div>
             </div>
           </div>

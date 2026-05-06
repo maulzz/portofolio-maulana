@@ -8,28 +8,28 @@ export default function Hero() {
     {
       name: "GitHub",
       icon: <FaGithub className="text-3xl" />,
-      url: "#",
+      url: "https://github.com/maulzz",
       label: "GitHub",
       color: "bg-white text-black",
     },
     {
       name: "LinkedIn",
       icon: <FaLinkedin className="text-3xl" />,
-      url: "#",
+      url: "https://www.linkedin.com/in/wildan-maulana-habibi-a973482aa/",
       label: "LinkedIn",
       color: "bg-neo-blue text-white",
     },
     {
       name: "Instagram",
       icon: <FaInstagram className="text-3xl" />,
-      url: "#",
+      url: "https://www.instagram.com/wldn_m_lna",
       label: "Instagram",
       color: "bg-neo-pink text-black",
     },
     {
       name: "Medium",
       icon: <FaMedium className="text-3xl" />,
-      url: "#",
+      url: "https://medium.com/@wildanmaulana95914",
       label: "Medium",
       color: "bg-black text-white",
     },
@@ -60,12 +60,12 @@ export default function Hero() {
             >
               Lihat Karya Saya
             </a>
-            <a
+            {/* <a
               href="#contact"
               className="px-8 py-4 bg-white border-2 border-black font-bold text-lg shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-none transition-all text-center cursor-pointer"
             >
               CV
-            </a>
+            </a> */}
           </div>
           <div className="flex flex-wrap justify-center lg:justify-start gap-4">
             {socialLinks.map((social) => (

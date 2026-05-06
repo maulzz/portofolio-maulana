@@ -36,9 +36,12 @@ export default function Projects() {
       title: "Laksita Kala - Aplikasi pencatatan tugas ",
       category: "To Do List App",
       image: [
-        "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1618761714954-0b8cd0026356?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "/images/laksita1.png",
+        "/images/laksita2.png",
+        "/images/laksita3.png",
+        "/images/laksita4.png",
+        "/images/laksita5.png",
+        "/images/laksita6.png",
       ],
       desc: "Laksita Kala adalah asisten akademik untuk membantu menata tugas dan kebutuhan akademik mahasiswa. Membantu merencanakan jadwal kelas, mengelola semua tugas, dan melihat progres belajar di satu tempat terpusat.",
       techStack: ["NextJs", "Tailwind CSS", "Supabase", "PostgreSQL"],
@@ -51,9 +54,13 @@ export default function Projects() {
       title: "Nyimpeni Arthoku - Aplikasi Pencatat Pengeluaran",
       category: "Management App",
       image: [
-        "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1618761714954-0b8cd0026356?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "/images/nyimpeniartokucover.png",
+        "/images/nyimpeniartoku1.png",
+        "/images/nyimpeniartoku2.png",
+        "/images/nyimpeniartoku3.png",
+        "/images/nyimpeniartoku4.png",
+        "/images/nyimpeniartoku5.png",
+        "/images/nyimpeniartoku6.png",
       ],
       desc: "Aplikasi web untuk mencatat dan mengelola pengeluaran keuangan pribadi. Dibangun dengan Laravel dan React.Js, menggunakan Supabase sebagai database.",
       techStack: ["Laravel", "React", "Tailwind CSS", "PostgreSQL"],
@@ -66,9 +73,11 @@ export default function Projects() {
       title: "Sistem Voting Pemilihan Ketua Osis",
       category: "Web App",
       image: [
-        "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1618761714954-0b8cd0026356?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "/images/ketoscover.png",
+        "/images/ketos1.png",
+        "/images/ketos2.png",
+        "/images/ketos3.png",
+        "/images/ketos4.png",
       ],
       desc: "Sebuah sistem pemungutan suara berbasis web untuk pemilihan ketua OSIS. Dibangun dengan Laravel dan Blade, menggunakan MySQL sebagai database.",
       techStack: ["Laravel", "Blade", "Tailwind CSS", "MySQL"],
@@ -81,9 +90,10 @@ export default function Projects() {
       title: "Website Ucapan Ulang Tahun",
       category: "Web App",
       image: [
-        "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1618761714954-0b8cd0026356?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "/images/ultahcover.png",
+        "/images/ultah1.png",
+        "/images/ultah2.png",
+        "/images/ultah3.png",
       ],
       desc: "Proyek belajar untuk membuat aplikasi web yang memungkinkan pengguna mengirimkan ucapan selamat ulang tahun. Dibangun dengan HTML, Tailwind CSS, dan JavaScript..",
       techStack: ["HTML", "Tailwind CSS", "JavaScript"],
@@ -96,9 +106,14 @@ export default function Projects() {
       title: "Website Perpustakaan",
       category: "Web App",
       image: [
-        "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1618761714954-0b8cd0026356?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "/images/perpuscover.png",
+        "/images/perpus1.png",
+        "/images/perpus2.png",
+        "/images/perpus3.png",
+        "/images/perpus4.png",
+        "/images/perpus5.png",
+        "/images/perpus6.png",
+        "/images/perpus7.png",
       ],
       desc: "Proyek tugas pada saat SMK untuk membuat sebuah aplikasi web untuk mengelola koleksi buku dan peminjaman. Dibangun dengan PHP dengan Tailwind CSS, menggunakan MySQL sebagai database.",
       techStack: ["PHP", "MySQL", "Tailwind CSS"],
@@ -229,7 +244,6 @@ export default function Projects() {
                         <FaArrowLeft />
                       </button>
 
-                      {/* Indikator Angka */}
                       <div className="px-4 flex items-center justify-center font-mono font-bold text-sm md:text-base border-r-4 border-black bg-white">
                         {currentImageIndex + 1} / {activeProject.image.length}
                       </div>
