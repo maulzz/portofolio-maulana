@@ -1,4 +1,4 @@
-import profil from "../assets/profil.svg";
+import profil from "../assets/profil.webp";
 import { SiReact, SiLaravel, SiFlutter } from "react-icons/si";
 import { IoRocketOutline } from "react-icons/io5";
 import { FaGithub, FaLinkedin, FaInstagram, FaMedium } from "react-icons/fa";

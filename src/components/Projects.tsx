@@ -9,11 +9,46 @@ import {
   FaArrowRight,
 } from "react-icons/fa6";
 
+import laksita1 from "../assets/images/laksita1.webp";
+import laksita2 from "../assets/images/laksita2.webp";
+import laksita3 from "../assets/images/laksita3.webp";
+import laksita4 from "../assets/images/laksita4.webp";
+import laksita5 from "../assets/images/laksita5.webp";
+import laksita6 from "../assets/images/laksita6.webp";
+
+import nyimpeniCover from "../assets/images/nyimpeniartokucover.webp";
+import nyimpeni1 from "../assets/images/nyimpeniartoku1.webp";
+import nyimpeni2 from "../assets/images/nyimpeniartoku2.webp";
+import nyimpeni3 from "../assets/images/nyimpeniartoku3.webp";
+import nyimpeni4 from "../assets/images/nyimpeniartoku4.webp";
+import nyimpeni5 from "../assets/images/nyimpeniartoku5.webp";
+import nyimpeni6 from "../assets/images/nyimpeniartoku6.webp";
+
+import ketosCover from "../assets/images/ketoscover.webp";
+import ketos1 from "../assets/images/ketos1.webp";
+import ketos2 from "../assets/images/ketos2.webp";
+import ketos3 from "../assets/images/ketos3.webp";
+import ketos4 from "../assets/images/ketos4.webp";
+
+import ultahCover from "../assets/images/ultahcover.webp";
+import ultah1 from "../assets/images/ultah1.webp";
+import ultah2 from "../assets/images/ultah2.webp";
+import ultah3 from "../assets/images/ultah3.webp";
+
+import perpusCover from "../assets/images/perpuscover.webp";
+import perpus1 from "../assets/images/perpus1.webp";
+import perpus2 from "../assets/images/perpus2.webp";
+import perpus3 from "../assets/images/perpus3.webp";
+import perpus4 from "../assets/images/perpus4.webp";
+import perpus5 from "../assets/images/perpus5.webp";
+import perpus6 from "../assets/images/perpus6.webp";
+import perpus7 from "../assets/images/perpus7.webp";
+
 type Project = {
   id: number;
   title: string;
   category: string;
-  image: string[];
+  projectImages: string[];
   desc: string;
   techStack: string[];
   linkLive: string | null;
@@ -35,13 +70,13 @@ export default function Projects() {
       id: 1,
       title: "Laksita Kala - Aplikasi pencatatan tugas ",
       category: "To Do List App",
-      image: [
-        "/images/laksita1.png",
-        "/images/laksita2.png",
-        "/images/laksita3.png",
-        "/images/laksita4.png",
-        "/images/laksita5.png",
-        "/images/laksita6.png",
+      projectImages: [
+        laksita1,
+        laksita2,
+        laksita3,
+        laksita4,
+        laksita5,
+        laksita6,
       ],
       desc: "Laksita Kala adalah asisten akademik untuk membantu menata tugas dan kebutuhan akademik mahasiswa. Membantu merencanakan jadwal kelas, mengelola semua tugas, dan melihat progres belajar di satu tempat terpusat.",
       techStack: ["NextJs", "Tailwind CSS", "Supabase", "PostgreSQL"],
@@ -53,14 +88,14 @@ export default function Projects() {
       id: 2,
       title: "Nyimpeni Arthoku - Aplikasi Pencatat Pengeluaran",
       category: "Management App",
-      image: [
-        "/images/nyimpeniartokucover.png",
-        "/images/nyimpeniartoku1.png",
-        "/images/nyimpeniartoku2.png",
-        "/images/nyimpeniartoku3.png",
-        "/images/nyimpeniartoku4.png",
-        "/images/nyimpeniartoku5.png",
-        "/images/nyimpeniartoku6.png",
+      projectImages: [
+        nyimpeniCover,
+        nyimpeni1,
+        nyimpeni2,
+        nyimpeni3,
+        nyimpeni4,
+        nyimpeni5,
+        nyimpeni6,
       ],
       desc: "Aplikasi web untuk mencatat dan mengelola pengeluaran keuangan pribadi. Dibangun dengan Laravel dan React.Js, menggunakan Supabase sebagai database.",
       techStack: ["Laravel", "React", "Tailwind CSS", "PostgreSQL"],
@@ -72,13 +107,7 @@ export default function Projects() {
       id: 3,
       title: "Sistem Voting Pemilihan Ketua Osis",
       category: "Web App",
-      image: [
-        "/images/ketoscover.png",
-        "/images/ketos1.png",
-        "/images/ketos2.png",
-        "/images/ketos3.png",
-        "/images/ketos4.png",
-      ],
+      projectImages: [ketosCover, ketos1, ketos2, ketos3, ketos4],
       desc: "Sebuah sistem pemungutan suara berbasis web untuk pemilihan ketua OSIS. Dibangun dengan Laravel dan Blade, menggunakan MySQL sebagai database.",
       techStack: ["Laravel", "Blade", "Tailwind CSS", "MySQL"],
       linkLive: "#",
@@ -89,12 +118,7 @@ export default function Projects() {
       id: 4,
       title: "Website Ucapan Ulang Tahun",
       category: "Web App",
-      image: [
-        "/images/ultahcover.png",
-        "/images/ultah1.png",
-        "/images/ultah2.png",
-        "/images/ultah3.png",
-      ],
+      projectImages: [ultahCover, ultah1, ultah2, ultah3],
       desc: "Proyek belajar untuk membuat aplikasi web yang memungkinkan pengguna mengirimkan ucapan selamat ulang tahun. Dibangun dengan HTML, Tailwind CSS, dan JavaScript..",
       techStack: ["HTML", "Tailwind CSS", "JavaScript"],
       linkLive: "#",
@@ -105,15 +129,15 @@ export default function Projects() {
       id: 5,
       title: "Website Perpustakaan",
       category: "Web App",
-      image: [
-        "/images/perpuscover.png",
-        "/images/perpus1.png",
-        "/images/perpus2.png",
-        "/images/perpus3.png",
-        "/images/perpus4.png",
-        "/images/perpus5.png",
-        "/images/perpus6.png",
-        "/images/perpus7.png",
+      projectImages: [
+        perpusCover,
+        perpus1,
+        perpus2,
+        perpus3,
+        perpus4,
+        perpus5,
+        perpus6,
+        perpus7,
       ],
       desc: "Proyek tugas pada saat SMK untuk membuat sebuah aplikasi web untuk mengelola koleksi buku dan peminjaman. Dibangun dengan PHP dengan Tailwind CSS, menggunakan MySQL sebagai database.",
       techStack: ["PHP", "MySQL", "Tailwind CSS"],
@@ -148,9 +172,10 @@ export default function Projects() {
                   className={`absolute inset-0 opacity-20 group-hover:opacity-0 transition-opacity z-10 ${project.color}`}
                 ></div>
                 <img
-                  src={project.image[0]}
+                  src={project.projectImages[0]}
                   alt={project.title}
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300 transform group-hover:scale-105"
+                  loading="lazy"
                 />
               </div>
 
@@ -224,18 +249,19 @@ export default function Projects() {
                 <div className="border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] flex flex-col bg-white">
                   <div className="aspect-video relative overflow-hidden bg-gray-200">
                     <img
-                      src={activeProject.image[currentImageIndex]}
+                      src={activeProject.projectImages[currentImageIndex]}
                       alt={`${activeProject.title} screenshot ${currentImageIndex + 1}`}
                       className="w-full h-full object-cover"
+                      loading="lazy"
                     />
                   </div>
-                  {activeProject.image.length > 1 && (
+                  {activeProject.projectImages.length > 1 && (
                     <div className="flex border-t-4 border-black h-12 bg-neo-yellow">
                       <button
                         onClick={() =>
                           setCurrentImageIndex((prev) =>
                             prev === 0
-                              ? activeProject.image.length - 1
+                              ? activeProject.projectImages.length - 1
                               : prev - 1,
                           )
                         }
@@ -245,12 +271,13 @@ export default function Projects() {
                       </button>
 
                       <div className="px-4 flex items-center justify-center font-mono font-bold text-sm md:text-base border-r-4 border-black bg-white">
-                        {currentImageIndex + 1} / {activeProject.image.length}
+                        {currentImageIndex + 1} /{" "}
+                        {activeProject.projectImages.length}
                       </div>
                       <button
                         onClick={() =>
                           setCurrentImageIndex((prev) =>
-                            prev === activeProject.image.length - 1
+                            prev === activeProject.projectImages.length - 1
                               ? 0
                               : prev + 1,
                           )

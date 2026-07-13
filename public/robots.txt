@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://https://portofolio-maulzz.vercel.app/sitemap.xml
