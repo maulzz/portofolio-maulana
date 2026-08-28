@@ -1,6 +1,34 @@
 export default function Education() {
   const educationData = [
     {
+      year: "Now",
+      title: "CEO & Mobile Developer",
+      institution: "Aksara Tidar",
+      desc: "Mengendalikan visi strategis dan operasional bisnis Aksara Tidar, sekaligus bertanggung jawab secara hands-on dalam siklus penuh pengembangan aplikasi mobile berkinerja tinggi menggunakan kerangka kerja Flutter.",
+      learnings: [
+        "Flutter",
+        "Manajemen",
+        "Leadership",
+        "Product Strategy",
+      ],
+      color: "bg-white",
+      tag: "💼WORK",
+    },
+    {
+      year: "2026",
+      title: "P2MW 2026 Awardee",
+      institution: "Aksara Tidar",
+      desc: "Berhasil meraih pendanaan nasional Program Pembinaan Mahasiswa Wirausaha (P2MW) 2026 dari Kemdikbudristek untuk pengembangan KuTanya, sebuah platform ed-tech yang menghubungkan siswa/mahasiswa dengan guru/dosen",
+      learnings: [
+        "Manajemen",
+        "Leadership",
+        "Product Strategy",
+        "Marketing"
+      ],
+      color: "bg-neo-pink",
+      tag: "💼Experience",
+    },
+    {
       year: "2025 - Sekarang",
       title: "Mahasiswa Teknologi Informasi",
       institution: "Universitas Tidar",
