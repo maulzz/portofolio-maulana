@@ -2,7 +2,7 @@ export default function Education() {
   const educationData = [
     {
       year: "Now",
-      title: "CEO & Mobile Developer",
+      title: "Team Lead & Mobile Developer",
       institution: "Aksara Tidar",
       desc: "Mengendalikan visi strategis dan operasional bisnis Aksara Tidar, sekaligus bertanggung jawab secara hands-on dalam siklus penuh pengembangan aplikasi mobile berkinerja tinggi menggunakan kerangka kerja Flutter.",
       learnings: [
@@ -12,7 +12,7 @@ export default function Education() {
         "Product Strategy",
       ],
       color: "bg-white",
-      tag: "💼WORK",
+      tag: "💼 WORK",
     },
     {
       year: "2026",
@@ -26,7 +26,7 @@ export default function Education() {
         "Marketing"
       ],
       color: "bg-neo-pink",
-      tag: "💼Experience",
+      tag: "💼 Experience",
     },
     {
       year: "2025 - Sekarang",
