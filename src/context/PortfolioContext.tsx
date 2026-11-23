@@ -6,71 +6,90 @@ import {
   type ReactNode,
 } from "react";
 import profileFallback from "../data/profile.json";
-import projectsFallback from "../data/projects.json";
-import skillsFallback from "../data/skills.json";
-import experiencesFallback from "../data/experiences.json";
 import type { ProfileData } from "../types/profile";
 import type { ProjectItem } from "../types/project";
 import type { SkillCategory } from "../types/skill";
 import type { ExperienceItem } from "../types/experience";
+
+interface ResourceStatus {
+  loading: boolean;
+  disconnected: boolean;
+}
 
 interface PortfolioContextValue {
   profile: ProfileData;
   projects: ProjectItem[];
   skills: SkillCategory[];
   experiences: ExperienceItem[];
-  isFromCms: boolean;
+  status: {
+    projects: ResourceStatus;
+    skills: ResourceStatus;
+    experiences: ResourceStatus;
+  };
 }
 
-const defaultData: PortfolioContextValue = {
+const CMS_BASE_URL = import.meta.env.VITE_CMS_API_URL?.replace(/\/+$/, "");
+
+const defaultValue: PortfolioContextValue = {
   profile: profileFallback as ProfileData,
-  projects: projectsFallback as ProjectItem[],
-  skills: skillsFallback as SkillCategory[],
-  experiences: experiencesFallback as ExperienceItem[],
-  isFromCms: false,
+  projects: [],
+  skills: [],
+  experiences: [],
+  status: {
+    projects: { loading: Boolean(CMS_BASE_URL), disconnected: !CMS_BASE_URL },
+    skills: { loading: Boolean(CMS_BASE_URL), disconnected: !CMS_BASE_URL },
+    experiences: { loading: Boolean(CMS_BASE_URL), disconnected: !CMS_BASE_URL },
+  },
 };
 
-const PortfolioContext = createContext<PortfolioContextValue>(defaultData);
+const PortfolioContext = createContext<PortfolioContextValue>(defaultValue);
 
 export function PortfolioProvider({ children }: { children: ReactNode }) {
-  const [data, setData] = useState<PortfolioContextValue>(defaultData);
+  const [data, setData] = useState<PortfolioContextValue>(defaultValue);
 
   useEffect(() => {
-    const baseUrl = import.meta.env.VITE_CMS_API_URL?.replace(/\/+$/, "");
+    const baseUrl = CMS_BASE_URL;
     if (!baseUrl) return;
 
     const controller = new AbortController();
 
-    async function fetchJson<T>(endpoint: string): Promise<T | null> {
+    async function fetchJson<T>(
+      endpoint: string
+    ): Promise<{ ok: boolean; data: T | null }> {
       try {
         const res = await fetch(`${baseUrl}${endpoint}`, {
           signal: controller.signal,
           headers: { Accept: "application/json" },
         });
-        if (!res.ok) return null;
-        return (await res.json()) as T;
+        if (!res.ok) return { ok: false, data: null };
+        return { ok: true, data: (await res.json()) as T };
       } catch {
-        return null;
+        return { ok: false, data: null };
       }
     }
 
     async function loadFromCms() {
-      const [profile, projects, skills, experiences] = await Promise.all([
-        fetchJson<ProfileData>("/profile"),
-        fetchJson<ProjectItem[]>("/projects"),
-        fetchJson<SkillCategory[]>("/skills"),
-        fetchJson<ExperienceItem[]>("/experiences"),
-      ]);
+      const [profileRes, projectsRes, skillsRes, experiencesRes] =
+        await Promise.all([
+          fetchJson<ProfileData>("/profile"),
+          fetchJson<ProjectItem[]>("/projects"),
+          fetchJson<SkillCategory[]>("/skills"),
+          fetchJson<ExperienceItem[]>("/experiences"),
+        ]);
+
+      if (controller.signal.aborted) return;
 
       setData((prev) => ({
-        profile: profile ?? prev.profile,
-        projects: projects && projects.length > 0 ? projects : prev.projects,
-        skills: skills && skills.length > 0 ? skills : prev.skills,
+        profile: profileRes.ok && profileRes.data ? profileRes.data : prev.profile,
+        projects: projectsRes.ok && projectsRes.data ? projectsRes.data : [],
+        skills: skillsRes.ok && skillsRes.data ? skillsRes.data : [],
         experiences:
-          experiences && experiences.length > 0
-            ? experiences
-            : prev.experiences,
-        isFromCms: Boolean(profile || projects || skills || experiences),
+          experiencesRes.ok && experiencesRes.data ? experiencesRes.data : [],
+        status: {
+          projects: { loading: false, disconnected: !projectsRes.ok },
+          skills: { loading: false, disconnected: !skillsRes.ok },
+          experiences: { loading: false, disconnected: !experiencesRes.ok },
+        },
       }));
     }
 

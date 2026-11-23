@@ -13,14 +13,57 @@ import { usePortfolio } from "../context/PortfolioContext";
 
 function EmptyPlaceholder({ label }: { label: string }) {
   return (
-    <p className="font-mono text-xs text-ink-muted italic border border-dashed border-border-subtle bg-surface-muted/50 px-4 py-3">
-      {label} — belum diisi (siap dihubungkan ke CMS).
+    <p className="font-mono text-xs text-ink-muted border border-dashed border-border-subtle bg-surface-muted/50 px-4 py-3">
+      {label} belum tersedia.
     </p>
   );
 }
 
+function ProjectDetailSkeleton() {
+  return (
+    <div className="min-h-screen bg-canvas text-ink flex flex-col">
+      <header className="sticky top-0 z-40 bg-canvas/95 backdrop-blur-sm border-b-2 border-border">
+        <div className="swiss-container h-16 flex items-center justify-between gap-4">
+          <Link
+            to="/#project"
+            className="font-mono text-xs font-bold uppercase tracking-wider inline-flex items-center gap-2 px-3 py-1.5 border-2 border-border bg-surface shadow-neo-sm hover:bg-accent hover:text-on-accent transition-colors"
+          >
+            <FaArrowLeft className="text-[11px]" /> Back to Projects
+          </Link>
+        </div>
+      </header>
+      <main className="flex-grow animate-pulse">
+        <section className="py-12 md:py-16 border-b-2 border-border bg-surface">
+          <div className="swiss-container space-y-6">
+            <div className="flex gap-2">
+              <div className="h-6 w-10 bg-surface-muted" />
+              <div className="h-6 w-28 bg-surface-muted" />
+            </div>
+            <div className="h-12 w-2/3 bg-surface-muted" />
+            <div className="h-20 w-full max-w-2xl bg-surface-muted" />
+            <div className="aspect-[16/9] max-h-[540px] w-full bg-surface-muted border-2 border-border" />
+          </div>
+        </section>
+        <section className="py-16">
+          <div className="swiss-container grid grid-cols-1 lg:grid-cols-12 gap-12">
+            <div className="lg:col-span-4 space-y-6">
+              <div className="neo-card h-48 bg-surface-muted" />
+              <div className="neo-card h-36 bg-surface-muted" />
+            </div>
+            <div className="lg:col-span-8 space-y-6">
+              <div className="neo-card h-44 bg-surface-muted" />
+              <div className="neo-card h-44 bg-surface-muted" />
+            </div>
+          </div>
+        </section>
+      </main>
+      <Footer />
+    </div>
+  );
+}
+
 export default function ProjectDetailPage() {
-  const { projects } = usePortfolio();
+  const { projects, status } = usePortfolio();
   const { slug } = useParams<{ slug: string }>();
   const [lightbox, setLightbox] = useState<{
     slug: string;
@@ -55,6 +98,10 @@ export default function ProjectDetailPage() {
     }
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [lightboxIndex]);
+
+  if (status.projects.loading || status.projects.disconnected) {
+    return <ProjectDetailSkeleton />;
+  }
 
   if (!project) {
     return (
