@@ -2,13 +2,11 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaRegWindowMaximize, FaMinus, FaArrowRight } from "react-icons/fa6";
 import SectionHeader from "./ui/SectionHeader";
-import projectsRaw from "../data/projects.json";
-import type { ProjectItem } from "../types/project";
+import { usePortfolio } from "../context/PortfolioContext";
 import { resolveProjectImage } from "../utils/projectMedia";
 
-const projectsData = projectsRaw as ProjectItem[];
-
 export default function Projects() {
+  const { projects: projectsData } = usePortfolio();
   const [showAll, setShowAll] = useState(false);
 
   const displayedProjects = showAll ? projectsData : projectsData.slice(0, 4);

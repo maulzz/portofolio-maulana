@@ -4,12 +4,10 @@ import { FaBookBookmark, FaUserAstronaut } from "react-icons/fa6";
 import { SiJavascript, SiTypescript, SiPhp } from "react-icons/si";
 import SectionHeader from "./ui/SectionHeader";
 import { themeManager } from "../config/theme";
-import profileRaw from "../data/profile.json";
-import type { ProfileData } from "../types/profile";
-
-const profile = profileRaw as ProfileData;
+import { usePortfolio } from "../context/PortfolioContext";
 
 export default function GithubStats() {
+  const { profile } = usePortfolio();
   const githubUsername = profile.githubUsername;
 
   const [stats, setStats] = useState({

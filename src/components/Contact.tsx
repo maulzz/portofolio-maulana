@@ -6,12 +6,10 @@ import {
   FaXmark,
 } from "react-icons/fa6";
 import SectionHeader from "./ui/SectionHeader";
-import profileRaw from "../data/profile.json";
-import type { ProfileData } from "../types/profile";
-
-const profile = profileRaw as ProfileData;
+import { usePortfolio } from "../context/PortfolioContext";
 
 export default function Contact() {
+  const { profile } = usePortfolio();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
 

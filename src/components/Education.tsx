@@ -1,15 +1,15 @@
 import { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa6";
 import SectionHeader from "./ui/SectionHeader";
-import experiencesRaw from "../data/experiences.json";
-import type { ExperienceCategory, ExperienceItem } from "../types/experience";
+import { usePortfolio } from "../context/PortfolioContext";
+import type { ExperienceCategory } from "../types/experience";
 
-const experiencesData = experiencesRaw as ExperienceItem[];
 const INITIAL_LIMIT = 5;
 
 type FilterTab = "all" | ExperienceCategory;
 
 export default function Education() {
+  const { experiences: experiencesData } = usePortfolio();
   const [activeTab, setActiveTab] = useState<FilterTab>("all");
   const [showAll, setShowAll] = useState(false);
 

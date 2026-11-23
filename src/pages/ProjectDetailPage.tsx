@@ -7,12 +7,9 @@ import {
   FaGithub,
   FaXmark,
 } from "react-icons/fa6";
-import projectsRaw from "../data/projects.json";
-import type { ProjectItem } from "../types/project";
 import { resolveProjectImage } from "../utils/projectMedia";
 import Footer from "../components/Footer";
-
-const projects = projectsRaw as ProjectItem[];
+import { usePortfolio } from "../context/PortfolioContext";
 
 function EmptyPlaceholder({ label }: { label: string }) {
   return (
@@ -23,6 +20,7 @@ function EmptyPlaceholder({ label }: { label: string }) {
 }
 
 export default function ProjectDetailPage() {
+  const { projects } = usePortfolio();
   const { slug } = useParams<{ slug: string }>();
   const [lightbox, setLightbox] = useState<{
     slug: string;

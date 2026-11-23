@@ -1,11 +1,9 @@
 import SectionHeader from "./ui/SectionHeader";
-import skillsRaw from "../data/skills.json";
-import type { SkillCategory } from "../types/skill";
+import { usePortfolio } from "../context/PortfolioContext";
 import { SkillIcon } from "../utils/skillIcon";
 
-const skillGroups = skillsRaw as SkillCategory[];
-
 export default function Skills() {
+  const { skills: skillGroups } = usePortfolio();
   return (
     <section
       id="skills"

@@ -1,10 +1,8 @@
 import { FaArrowUp } from "react-icons/fa6";
-import profileRaw from "../data/profile.json";
-import type { ProfileData } from "../types/profile";
-
-const profile = profileRaw as ProfileData;
+import { usePortfolio } from "../context/PortfolioContext";
 
 export default function Footer() {
+  const { profile } = usePortfolio();
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };

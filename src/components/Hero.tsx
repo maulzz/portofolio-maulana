@@ -1,10 +1,7 @@
 import { FaGithub, FaLinkedin, FaInstagram, FaMedium } from "react-icons/fa";
 import { FaArrowRight, FaDownload } from "react-icons/fa6";
-import profileRaw from "../data/profile.json";
-import type { ProfileData } from "../types/profile";
+import { usePortfolio } from "../context/PortfolioContext";
 import { resolveProjectImage } from "../utils/projectMedia";
-
-const profile = profileRaw as ProfileData;
 
 const SOCIAL_ICON_MAP: Record<string, React.ReactNode> = {
   github: <FaGithub className="text-xl" />,
@@ -14,6 +11,7 @@ const SOCIAL_ICON_MAP: Record<string, React.ReactNode> = {
 };
 
 export default function Hero() {
+  const { profile } = usePortfolio();
   const avatarSrc = resolveProjectImage(profile.avatarUrl);
   const nameParts = profile.fullName.split(" ");
   const firstName = nameParts[0] ?? profile.fullName;

@@ -1,9 +1,7 @@
-import profileRaw from "../data/profile.json";
-import type { ProfileData } from "../types/profile";
-
-const profile = profileRaw as ProfileData;
+import { usePortfolio } from "../context/PortfolioContext";
 
 export default function AboutStrip() {
+  const { profile } = usePortfolio();
   if (!profile.aboutPillars.length) return null;
 
   return (

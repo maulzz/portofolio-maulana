@@ -1,10 +1,8 @@
 import { useState } from "react";
-import profileRaw from "../data/profile.json";
-import type { ProfileData } from "../types/profile";
-
-const profile = profileRaw as ProfileData;
+import { usePortfolio } from "../context/PortfolioContext";
 
 export default function Navbar() {
+  const { profile } = usePortfolio();
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
