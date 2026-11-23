@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* =====================================================================
+     MASTER THEME TOKENS (Single Source of Truth)
+     Ubah --color-primary di sini untuk mengubah seluruh warna utama,
+     tint, gradasi, hover state, dan skala grafik secara otomatis.
+     ===================================================================== */
+  --color-primary: #0055ff;
+  --color-accent: #ffd700;
+
+  /* Swiss Neutral Surfaces & Typography */
+  --color-canvas: #f5f5f2;
+  --color-surface: #ffffff;
+  --color-surface-muted: #eaeae4;
+  --color-ink: #111111;
+  --color-ink-muted: #525252;
+  --color-border: #111111;
+  --color-border-subtle: #d4d4ce;
+  --color-on-primary: #ffffff;
+  --color-on-accent: #111111;
+
+  /* =====================================================================
+     DERIVED TOKENS (Otomatis mengikuti --color-primary & --color-accent)
+     ===================================================================== */
+  --color-primary-soft: color-mix(
+    in srgb,
+    var(--color-primary) 10%,
+    var(--color-surface)
+  );
+  --color-primary-tint-1: color-mix(
+    in srgb,
+    var(--color-primary) 24%,
+    var(--color-surface)
+  );
+  --color-primary-tint-2: color-mix(
+    in srgb,
+    var(--color-primary) 54%,
+    var(--color-surface)
+  );
+  --color-primary-dark: color-mix(in srgb, var(--color-primary) 76%, #000000);
+  --color-accent-soft: color-mix(
+    in srgb,
+    var(--color-accent) 20%,
+    var(--color-surface)
+  );
+
+  /* Derived Gradients */
+  --gradient-primary: linear-gradient(
+    135deg,
+    var(--color-primary) 0%,
+    var(--color-primary-dark) 100%
+  );
+  --gradient-surface: linear-gradient(
+    180deg,
+    var(--color-surface) 0%,
+    var(--color-primary-soft) 100%
+  );
+  --gradient-accent: linear-gradient(
+    135deg,
+    var(--color-primary) 0%,
+    color-mix(in srgb, var(--color-primary) 65%, var(--color-accent)) 100%
+  );
+
+  /* Neo-Brutalist Structural Shadows */
+  --shadow-neo-sm: 3px 3px 0px 0px var(--color-border);
+  --shadow-neo: 5px 5px 0px 0px var(--color-border);
+  --shadow-neo-lg: 8px 8px 0px 0px var(--color-border);
+}
+
+@layer base {
+  body {
+    background-color: var(--color-canvas);
+    color: var(--color-ink);
+    font-family: "Epilogue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background-color: var(--color-primary);
+    color: var(--color-on-primary);
+  }
+}
+
+@layer components {
+  .swiss-container {
+    @apply max-w-7xl mx-auto px-6 lg:px-8;
+  }
+
+  .swiss-label {
+    @apply font-mono text-xs font-bold uppercase tracking-[0.14em] text-ink-muted;
+  }
+
+  .neo-card {
+    @apply bg-surface border-2 border-border shadow-neo transition-all duration-150;
+  }
+
+  .neo-card-interactive {
+    @apply bg-surface border-2 border-border shadow-neo hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-neo-lg active:translate-x-1 active:translate-y-1 active:shadow-none transition-all duration-150;
+  }
+
+  .neo-btn {
+    @apply inline-flex items-center justify-center gap-2 border-2 border-border font-mono font-bold text-sm uppercase tracking-wider px-5 py-3 shadow-neo-sm hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-neo active:translate-x-0.5 active:translate-y-0.5 active:shadow-none transition-all duration-150 cursor-pointer;
+  }
+}

@@ -1,0 +1,113 @@
+[
+  {
+    "id": 1,
+    "category": "experience",
+    "year": "Now",
+    "tag": "WORK",
+    "title": "Team Lead & Mobile Developer",
+    "institution": "Aksara Tidar",
+    "desc": "Mengendalikan visi strategis dan operasional bisnis Aksara Tidar, sekaligus bertanggung jawab secara hands-on dalam siklus penuh pengembangan aplikasi mobile berkinerja tinggi menggunakan kerangka kerja Flutter.",
+    "learnings": ["Flutter", "Manajemen", "Leadership", "Product Strategy"],
+    "highlight": true
+  },
+  {
+    "id": 2,
+    "category": "achievement",
+    "year": "2026",
+    "tag": "AWARD",
+    "title": "P2MW 2026 Awardee",
+    "institution": "Aksara Tidar — Kemdikbudristek",
+    "desc": "Berhasil meraih pendanaan nasional Program Pembinaan Mahasiswa Wirausaha (P2MW) 2026 dari Kemdikbudristek untuk pengembangan KuTanya, sebuah platform ed-tech yang menghubungkan siswa/mahasiswa dengan guru/dosen.",
+    "learnings": ["Manajemen", "Leadership", "Product Strategy", "Marketing"],
+    "highlight": true
+  },
+  {
+    "id": 3,
+    "category": "achievement",
+    "year": "2025 - Sekarang",
+    "tag": "INFRASTRUCTURE",
+    "title": "Deployment Aplikasi ke Home Server",
+    "institution": "Personal Infrastructure",
+    "desc": "Merancang dan mengelola deployment aplikasi web serta layanan backend secara mandiri ke home server pribadi, mulai dari setup jaringan, routing domain, hingga menjaga stabilitas layanan agar dapat diakses secara publik.",
+    "learnings": ["Home Server", "Deployment", "Networking", "Self-Hosting"],
+    "highlight": true
+  },
+  {
+    "id": 4,
+    "category": "achievement",
+    "year": "2025 - Sekarang",
+    "tag": "DEVOPS",
+    "title": "Manajemen Docker, Nginx & Linux Server",
+    "institution": "Self-Managed Server",
+    "desc": "Mengelola containerisasi aplikasi menggunakan Docker, mengonfigurasi Nginx sebagai reverse proxy dan terminasi SSL/HTTPS, serta melakukan administrasi sistem Linux server untuk kebutuhan production.",
+    "learnings": ["Docker", "Nginx", "Linux Server", "Reverse Proxy"],
+    "highlight": false
+  },
+  {
+    "id": 5,
+    "category": "education",
+    "year": "2025 - Sekarang",
+    "tag": "ACADEMIC",
+    "title": "Mahasiswa Teknologi Informasi",
+    "institution": "Universitas Tidar",
+    "desc": "Aktif menulis esai tentang dokumentasi pemrograman melalui Medium. Berfokus pada perancangan arsitektur database, optimalisasi struktur algoritma, serta full-stack web & mobile development untuk membangun perangkat lunak yang kokoh dan scalable.",
+    "learnings": [
+      "Struktur Algoritma",
+      "Basis Data",
+      "Web & Mobile Development",
+      "Paradigma Sistem"
+    ],
+    "highlight": false
+  },
+  {
+    "id": 6,
+    "category": "education",
+    "year": "Lulusan 2025",
+    "tag": "ACADEMIC",
+    "title": "Siswa Rekayasa Perangkat Lunak",
+    "institution": "SMKN 2 Magelang",
+    "desc": "Membangun fondasi software engineering dari nol: struktur data, manajemen database, pengembangan aplikasi web & mobile, serta eksplorasi kreatif digital mencakup 3D modeling, animasi, dan 2D/3D game development.",
+    "learnings": [
+      "Data Structures",
+      "Database Management",
+      "Web & Mobile App",
+      "2D & 3D Game Dev",
+      "Software Engineering"
+    ],
+    "highlight": false
+  },
+  {
+    "id": 7,
+    "category": "experience",
+    "year": "2024 - 2025",
+    "tag": "INTERNSHIP",
+    "title": "Game Development Intern",
+    "institution": "PT Teknoreka",
+    "desc": "Terlibat penuh dalam siklus pengembangan game, mulai dari merancang aset 2D & 3D hingga penulisan logika permainan (scripting). Mengasah pemecahan masalah teknis dan manajemen waktu untuk mencapai target rilis profesional.",
+    "learnings": [
+      "Unity",
+      "C#",
+      "2D & 3D Game Dev",
+      "2D & 3D Design",
+      "Manajemen Waktu"
+    ],
+    "highlight": false
+  },
+  {
+    "id": 8,
+    "category": "experience",
+    "year": "2023 - 2024",
+    "tag": "INTERNSHIP",
+    "title": "3D Designer Intern",
+    "institution": "Jivaloka Digital",
+    "desc": "Memproduksi dan mengembangkan aset 3D berkualitas untuk berbagai proyek game. Terlibat langsung dalam ekosistem kerja tim, alur manajemen proyek, serta eksplorasi fondasi lingkungan permainan menggunakan Unreal Engine 5.",
+    "learnings": [
+      "3D Assets",
+      "UE5 Basic",
+      "3D Modeling",
+      "Kolaborasi Tim",
+      "Manajemen Proyek"
+    ],
+    "highlight": false
+  }
+]

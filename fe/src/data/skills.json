@@ -1,0 +1,54 @@
+[
+  {
+    "code": "01",
+    "category": "Backend",
+    "items": [
+      { "name": "Laravel", "iconKey": "laravel", "iconUrl": "" },
+      { "name": "PHP", "iconKey": "php", "iconUrl": "" }
+    ]
+  },
+  {
+    "code": "02",
+    "category": "Frontend",
+    "items": [
+      { "name": "React", "iconKey": "react", "iconUrl": "" },
+      { "name": "Next.js", "iconKey": "nextjs", "iconUrl": "" },
+      { "name": "Tailwind CSS", "iconKey": "tailwindcss", "iconUrl": "" }
+    ]
+  },
+  {
+    "code": "03",
+    "category": "Database",
+    "items": [
+      { "name": "MySQL", "iconKey": "mysql", "iconUrl": "" },
+      { "name": "PostgreSQL", "iconKey": "postgresql", "iconUrl": "" },
+      { "name": "Supabase", "iconKey": "supabase", "iconUrl": "" }
+    ]
+  },
+  {
+    "code": "04",
+    "category": "Mobile",
+    "items": [
+      { "name": "Flutter", "iconKey": "flutter", "iconUrl": "" },
+      { "name": "Dart", "iconKey": "dart", "iconUrl": "" }
+    ]
+  },
+  {
+    "code": "05",
+    "category": "Infrastructure",
+    "items": [
+      { "name": "Docker", "iconKey": "docker", "iconUrl": "" },
+      { "name": "Linux Server", "iconKey": "linux", "iconUrl": "" },
+      { "name": "Nginx", "iconKey": "nginx", "iconUrl": "" }
+    ]
+  },
+  {
+    "code": "06",
+    "category": "Tools",
+    "items": [
+      { "name": "Git", "iconKey": "git", "iconUrl": "" },
+      { "name": "GitHub", "iconKey": "github", "iconUrl": "" },
+      { "name": "Postman", "iconKey": "postman", "iconUrl": "" }
+    ]
+  }
+]

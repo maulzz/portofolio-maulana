@@ -1,0 +1,53 @@
+{
+  "brandName": "Maulzz.Dev",
+  "fullName": "Wildan Maulana",
+  "roleTitle": "Full-Stack & Mobile Developer — Teknologi Informasi, Universitas Tidar",
+  "availabilityText": "Open for Freelance & Remote Full-Time — Magelang, ID",
+  "shortBio": "Membangun aplikasi web dan mobile yang terstruktur, cepat, dan berdampak nyata — memadukan arsitektur kode yang bersih dengan pengalaman pengguna yang fungsional.",
+  "avatarUrl": "profil.webp",
+  "cvUrl": "",
+  "focusLabel": "Web & Mobile Systems",
+  "localeBadge": "ID / EN",
+  "email": "wildanmaulana95914@gmail.com",
+  "location": "Magelang, Jawa Tengah, Indonesia",
+  "githubUsername": "maulzz",
+  "socialLinks": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/maulzz",
+      "iconKey": "github"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/wildan-maulana-habibi-a973482aa/",
+      "iconKey": "linkedin"
+    },
+    {
+      "name": "Instagram",
+      "url": "https://www.instagram.com/wldn_m_lna",
+      "iconKey": "instagram"
+    },
+    {
+      "name": "Medium",
+      "url": "https://medium.com/@wildanmaulana95914",
+      "iconKey": "medium"
+    }
+  ],
+  "aboutPillars": [
+    {
+      "code": "01",
+      "title": "Latar Belakang",
+      "description": "Berawal dari Rekayasa Perangkat Lunak di SMKN 2 Magelang dan pengalaman magang di industri game, kini melanjutkan studi Teknologi Informasi di Universitas Tidar sekaligus memimpin pengembangan produk di Aksara Tidar."
+    },
+    {
+      "code": "02",
+      "title": "Fokus Pengembangan",
+      "description": "Merancang aplikasi web full-stack (React, Next.js, Laravel) dan aplikasi mobile lintas platform (Flutter), hingga mengelola deployment mandiri menggunakan Docker, Nginx, dan Linux home server."
+    },
+    {
+      "code": "03",
+      "title": "Pendekatan Software",
+      "description": "Mengutamakan pemahaman masalah sebelum menulis kode: arsitektur database yang rapi, komponen modular yang mudah dirawat, dan pengiriman fitur yang cepat namun tetap terukur."
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+[
+  {
+    "id": 1,
+    "slug": "laksita-kala",
+    "title": "Laksita Kala — Aplikasi Pencatatan Tugas",
+    "category": "Productivity / Web App",
+    "year": "2025",
+    "featured": true,
+    "overview": "Laksita Kala adalah asisten akademik untuk membantu menata tugas dan kebutuhan akademik mahasiswa. Membantu merencanakan jadwal kelas, mengelola semua tugas, dan melihat progres belajar di satu tempat terpusat.",
+    "problem": "",
+    "solution": "",
+    "myRole": {
+      "title": "",
+      "contribution": "",
+      "responsibilities": []
+    },
+    "techStack": ["Next.js", "Tailwind CSS", "Supabase", "PostgreSQL"],
+    "keyFeatures": [],
+    "architecture": {
+      "summary": "",
+      "flow": []
+    },
+    "challenges": [],
+    "screenshots": [
+      { "src": "laksita1.webp", "caption": "" },
+      { "src": "laksita2.webp", "caption": "" },
+      { "src": "laksita3.webp", "caption": "" },
+      { "src": "laksita4.webp", "caption": "" },
+      { "src": "laksita5.webp", "caption": "" },
+      { "src": "laksita6.webp", "caption": "" }
+    ],
+    "links": {
+      "live": "https://laksita-kala.vercel.app/",
+      "github": ""
+    }
+  },
+  {
+    "id": 2,
+    "slug": "nyimpeni-arthoku",
+    "title": "Nyimpeni Arthoku — Pencatat Pengeluaran",
+    "category": "Finance Management",
+    "year": "2025",
+    "featured": false,
+    "overview": "Aplikasi web untuk mencatat dan mengelola pengeluaran keuangan pribadi. Dibangun dengan Laravel dan React.js, menggunakan Supabase sebagai database.",
+    "problem": "",
+    "solution": "",
+    "myRole": {
+      "title": "",
+      "contribution": "",
+      "responsibilities": []
+    },
+    "techStack": ["Laravel", "React", "Tailwind CSS", "PostgreSQL"],
+    "keyFeatures": [],
+    "architecture": {
+      "summary": "",
+      "flow": []
+    },
+    "challenges": [],
+    "screenshots": [
+      { "src": "nyimpeniartokucover.webp", "caption": "" },
+      { "src": "nyimpeniartoku1.webp", "caption": "" },
+      { "src": "nyimpeniartoku2.webp", "caption": "" },
+      { "src": "nyimpeniartoku3.webp", "caption": "" },
+      { "src": "nyimpeniartoku4.webp", "caption": "" },
+      { "src": "nyimpeniartoku5.webp", "caption": "" },
+      { "src": "nyimpeniartoku6.webp", "caption": "" }
+    ],
+    "links": {
+      "live": "",
+      "github": "https://github.com/maulzz/Nyimpeni-Arthoku"
+    }
+  },
+  {
+    "id": 3,
+    "slug": "sistem-voting-ketua-osis",
+    "title": "Sistem Voting Pemilihan Ketua OSIS",
+    "category": "Information System",
+    "year": "2024",
+    "featured": false,
+    "overview": "Sebuah sistem pemungutan suara berbasis web untuk pemilihan ketua OSIS. Dibangun dengan Laravel dan Blade, menggunakan MySQL sebagai database.",
+    "problem": "",
+    "solution": "",
+    "myRole": {
+      "title": "",
+      "contribution": "",
+      "responsibilities": []
+    },
+    "techStack": ["Laravel", "Blade", "Tailwind CSS", "MySQL"],
+    "keyFeatures": [],
+    "architecture": {
+      "summary": "",
+      "flow": []
+    },
+    "challenges": [],
+    "screenshots": [
+      { "src": "ketoscover.webp", "caption": "" },
+      { "src": "ketos1.webp", "caption": "" },
+      { "src": "ketos2.webp", "caption": "" },
+      { "src": "ketos3.webp", "caption": "" },
+      { "src": "ketos4.webp", "caption": "" }
+    ],
+    "links": {
+      "live": "",
+      "github": "https://github.com/maulzz/pilketos"
+    }
+  },
+  {
+    "id": 4,
+    "slug": "website-ucapan-ulang-tahun",
+    "title": "Website Ucapan Ulang Tahun",
+    "category": "Interactive Web",
+    "year": "2024",
+    "featured": false,
+    "overview": "Proyek belajar untuk membuat aplikasi web yang memungkinkan pengguna mengirimkan ucapan selamat ulang tahun. Dibangun dengan HTML, Tailwind CSS, dan JavaScript.",
+    "problem": "",
+    "solution": "",
+    "myRole": {
+      "title": "",
+      "contribution": "",
+      "responsibilities": []
+    },
+    "techStack": ["HTML", "Tailwind CSS", "JavaScript"],
+    "keyFeatures": [],
+    "architecture": {
+      "summary": "",
+      "flow": []
+    },
+    "challenges": [],
+    "screenshots": [
+      { "src": "ultahcover.webp", "caption": "" },
+      { "src": "ultah1.webp", "caption": "" },
+      { "src": "ultah2.webp", "caption": "" },
+      { "src": "ultah3.webp", "caption": "" }
+    ],
+    "links": {
+      "live": "",
+      "github": ""
+    }
+  },
+  {
+    "id": 5,
+    "slug": "website-perpustakaan",
+    "title": "Website Perpustakaan",
+    "category": "Library System",
+    "year": "2024",
+    "featured": false,
+    "overview": "Proyek tugas pada saat SMK untuk membuat sebuah aplikasi web guna mengelola koleksi buku dan peminjaman. Dibangun dengan PHP dan Tailwind CSS, menggunakan MySQL sebagai database.",
+    "problem": "",
+    "solution": "",
+    "myRole": {
+      "title": "",
+      "contribution": "",
+      "responsibilities": []
+    },
+    "techStack": ["PHP", "MySQL", "Tailwind CSS"],
+    "keyFeatures": [],
+    "architecture": {
+      "summary": "",
+      "flow": []
+    },
+    "challenges": [],
+    "screenshots": [
+      { "src": "perpuscover.webp", "caption": "" },
+      { "src": "perpus1.webp", "caption": "" },
+      { "src": "perpus2.webp", "caption": "" },
+      { "src": "perpus3.webp", "caption": "" },
+      { "src": "perpus4.webp", "caption": "" },
+      { "src": "perpus5.webp", "caption": "" },
+      { "src": "perpus6.webp", "caption": "" },
+      { "src": "perpus7.webp", "caption": "" }
+    ],
+    "links": {
+      "live": "",
+      "github": "https://github.com/maulzz/perpus"
+    }
+  }
+]
